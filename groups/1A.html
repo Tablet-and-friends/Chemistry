@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="groups-style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://kit.fontawesome.com/678d6674eb.js" crossorigin="anonymous"></script>
+
+<script >
+    function openSlideMenu(){
+        document.getElementById('slideMenu').style.width = ;
+    }
+    function closeSlideMenu(){
+        document.getElementById('sldeMenu').style.left = "-200px";
+    }
+</script>
+
+</head>
+<body>
+    <nav class="topnav">
+
+        <ul>
+        <li><a class="active" href="../Home.html" class"topnavItems">Таблица</a></li>
+        <li><a href="#" class ="topnavItems">Групи</a>
+            <table class = "dropdown">
+            <tbody>
+                <tr>
+                    <td class = "groupA"><a href="groups/1A.html">1A</a></td>
+                    <td class = "groupB"><a href="#">1B</a></td>
+                </tr>
+                <tr>
+                    <td class = "groupA"><a href="#">2A</a></td>
+                    <td class = "groupB"><a href="#">2B</a></td>
+                </tr>
+                <tr>
+                    <td class = "groupA"><a href="#">3A</a></td>
+                    <td class = "groupB"><a href="#">3B</a></td>
+                </tr>
+                <tr>
+                    <td class = "groupA"><a href="#">4A</a></td>
+                    <td class = "groupB"><a href="#">4B</a></td>
+                </tr>
+                <tr>
+                    <td class = "groupA"><a href="#">5A</a></td>
+                    <td class = "groupB"><a href="#">5B</a></td>
+                </tr>
+                <tr>
+                    <td class = "groupA"><a href="#">6A</a></td>
+                    <td class = "groupB"><a href="#">6B</a></td>
+                </tr>
+                <tr>
+                    <td class = "groupA"><a href="#">7A</a></td>
+                    <td class = "groupB"><a href="#">7B</a></td>
+                </tr>
+                <tr>
+                    <td class = "groupA"><a href="#">8A</a></td>
+                    <td class = "groupB"><a href="#">8B</a></td>
+                </tr>
+            </tbody>
+            </table>
+        </li>
+        <li><a href="#elements" class ="topnavItems">Елементи</a></li>
+        <li><a href="#about" class ="topnavItems">За нас</a></li>
+        </ul>
+        <p>Химия</p>
+    </nav>
+
+    <div id = "sideNavButton">
+            <span class = "slide">
+                <a href="#" onclick = "openSlideMen" >
+                    <i class="fas fa-bars"></i>
+                </a>
+            </span>
+    </div>
+
+    <div class="nav" id = "slideMenu">
+        <a href="#" class = "close" onclick = "closeSlideMenu">
+            <i class="fas fa-times"></i>
+        </a>
+        <a href="#">Химични Свойства</a>
+        <a href="#">Физични Свойства</a>
+        <a href="#">Приложение</a>
+    </div>
+    <p>нещо</p>
+
+</body>
+</html>

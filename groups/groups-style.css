@@ -3,8 +3,9 @@
     padding: 0;
 }
 body{
-    background-image: image(pictures/orange-background.jpg);
+    background-image: image(pictures/orange-background);
     background-size: cover;
+    overflow-x: hidden;
 }
 nav{
     width: 100%;
@@ -12,10 +13,44 @@ nav{
     /*background-color: #32354e;*/
     background: linear-gradient(180deg, rgba(46,49,68,1) 33%, rgba(46,49,68,0.9808517156862745) 47%, rgba(46,49,68,0.913624824929972) 64%, rgba(46,49,68,0.821187850140056) 74%, rgba(46,49,68,0.7763699229691876) 81%, rgba(46,49,68,0.6811318277310925) 87%, rgba(46,49,68,0.41222426470588236) 93%, rgba(46,49,68,0.2049413515406162) 98%, rgba(46,49,68,0) 100%);
  }
-
+.nav{
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 2;
+    background-color: black;
+    opacity: .9;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0s;
+}
+.nav a{
+    display: block;
+    padding: 20px 30px;
+    font-size: 25px;
+    color: #ccc;
+    size: 50px;
+    text-decoration: none;
+}
+.nav a:hover{
+    color: #fff;
+    transition: 0.7s;
+}
+.slide i{
+    size: 50px;
+}
  nav ul{
      float: left;
      margin-top: 5px
+ }
+ #sideNavButton{
+     width: 40px;
+     align-self: center;
+     margin: 10px 20px 0px 30px;
+     padding: none;
+ }
+ #sideNavButton:hover{
+     padding: none;
  }
  nav ul li{
      float: left;
@@ -116,51 +151,4 @@ margin: auto;
 width: 25%;
 border: 3px solid green;
 padding: 10px;
-}
-
-table{
- margin: auto;
- margin-top: 50px;
-}
-.periods td{
-  font-family: sans-serif;
-  font-size: 17px;
-  margin: 30px;
-}
-
-.PerTable{
-  display: block;
-  width: 1100px;
-  height:auto;
-  margin: auto;
-}
-
-.Element{
-  float: right;
-  display: inline-block;
-  width: 25%;
-  margin:20px;
-  /*-webkit-transition: -webkit-transform .8s ease-in-out;*/
-}
-
-.Element:hover {
--webkit-transform: rotate(3600deg);
-  -webkit-transition-duration: 60s;
-}
-
-.ElementInfo p{
-float:left;
-width: 60%;
-font-family: sans-serif;
-font-size: 26px;
-color: black;
-}
-.ElementInfo{
-margin: 30px 20px;
-margin-top: 100px;
-height:250px;
-}
-
-.main{
-margin-top:150px;
 }
